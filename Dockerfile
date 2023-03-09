@@ -21,4 +21,4 @@ RUN cd /metabase/ && clojure -M:dev:deps
 WORKDIR /build/
 COPY . /build
 
-ENTRYPOINT clojure -X:build
+ENTRYPOINT clojure --version && clojure -X:build
