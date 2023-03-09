@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        METABASE_VERSION: v0.44.0
+        METABASE_VERSION:
+        ARG CLOJURE_VERSION:
     volumes:
       - ./:/build
